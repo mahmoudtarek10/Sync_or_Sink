@@ -1,30 +1,18 @@
-# 📊 Sync or Sink — Student Performance Analysis
+# 📊 Sync or Sink — Global Salary Insights — Labor Market Analysis
 
-is a data-driven project that explores how data can determine success or failure. By analyzing and visualizing datasets, the project aims to reveal hidden insights, support strategic decisions, and help teams stay in sync with their objectives.
-
+This is a data-driven project that explores how different factors determine salary levels and market value. By analyzing and visualizing datasets, the project aims to reveal hidden insights, support strategic career decisions, and help professionals stay in sync with market trends.
 
 ## 🗂️ Project Overview
 
-**Sync or Sink** is a business intelligence project built with **Microsoft Power BI** that dives deep into student performance data. The project transforms raw academic data into meaningful visualizations and KPIs, helping educators and administrators identify trends, track student progress, and pinpoint areas that need attention.
-
+Global Salary Insights is a business intelligence project built with Microsoft Power BI that dives deep into a massive dataset of 250,000 records. The project transforms raw compensation data into meaningful visualizations and KPIs, helping individuals and organizations identify trends, track pay scales, and pinpoint the impact of experience and education on income
 ---
 
 ## 🌟 Data Model — Star Schema
+The project is built on a well-structured Star Schema to ensure optimal performance and clean relationships between tables.                         Dim_Job
+                            |
+Dim_Experience ── Fact_SalaryPerformance ── Dim_Education
 
-The project is built on a well-structured **Star Schema** to ensure optimal performance and clean relationships between tables.
-
-```
-                          Dim_Student
-                               |
-Dim_StudyBehavior ── Fact_StudentPerformance ── Dim_AIUsage
-```
-
-| Table | Type | Description |
-|-------|------|-------------|
-| `Fact_StudentPerformance` | Fact Table | Core table containing assignment scores, final score, improvement rate, last exam score, pass status, performance category, and study hours |
-| `Dim_Student` | Dimension | Student details (student_id, age, gender, grade_level) |
-| `Dim_StudyBehavior` | Dimension | Student behavior data (attendance, class participation, sleep hours, social media hours, study consistency index, study hours per day, tutoring hours) |
-| `Dim_AIUsage` | Dimension | AI-related usage metrics (ai_dependency_score, ai_ethics_score, and more) |
+TableTypeDescriptionFact_SalaryPerformanceFact TableCore table containing annual salary, net compensation, tax rates, bonuses, and growth percentages.Dim_JobDimensionJob details (job_title, industry, department, work_modality, required_skills).Dim_ExperienceDimensionProfessional background (years_of_experience, seniority_level, previous_roles).Dim_EducationDimensionEducational metrics (degree_level, certifications, field_of_study).|
 
 ---
 
@@ -39,13 +27,11 @@ Dim_StudyBehavior ── Fact_StudentPerformance ── Dim_AIUsage
 ---
 
 ## 📈 Key Features
-
-- ✅ Clean **Star Schema** data model with proper relationships
-- ✅ Interactive dashboards for performance tracking
-- ✅ KPIs for grades, pass rates, and subject performance
-- ✅ Time-based analysis using Date dimension
-- ✅ Drill-through capabilities for detailed student insights
-
+✅ Clean Star Schema data model with proper relationships
+✅ Interactive dashboards for salary tracking and benchmarking
+✅ KPIs for average income, pay gaps, and industry performance
+✅ Work Modality analysis (Remote vs. Hybrid vs. On-site)
+✅ Drill-through capabilities for detailed job role insights
 ---
 
 ## 🚀 Getting Started
