@@ -8,10 +8,7 @@ Global Salary Insights is a business intelligence project built with Microsoft P
 ---
 
 ## 🌟 Data Model — Star Schema
-The project is built on a well-structured Star Schema to ensure optimal performance and clean relationships between tables.                         Dim_Job
-                            |
-Dim_Experience ── Fact_SalaryPerformance ── Dim_Education
-
+The project is built on a well-structured Star Schema to ensure optimal performance and clean relationships between tables.         
 TableTypeDescriptionFact_SalaryPerformanceFact TableCore table containing annual salary, net compensation, tax rates, bonuses, and growth percentages.Dim_JobDimensionJob details (job_title, industry, department, work_modality, required_skills).Dim_ExperienceDimensionProfessional background (years_of_experience, seniority_level, previous_roles).Dim_EducationDimensionEducational metrics (degree_level, certifications, field_of_study).|
 
 ---
@@ -27,11 +24,17 @@ TableTypeDescriptionFact_SalaryPerformanceFact TableCore table containing annual
 ---
 
 ## 📈 Key Features
+
 ✅ Clean Star Schema data model with proper relationships
+
 ✅ Interactive dashboards for salary tracking and benchmarking
+
 ✅ KPIs for average income, pay gaps, and industry performance
+
 ✅ Work Modality analysis (Remote vs. Hybrid vs. On-site)
+
 ✅ Drill-through capabilities for detailed job role insights
+
 ---
 
 ## 🚀 Getting Started
