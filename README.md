@@ -160,9 +160,13 @@ Sync_or_Sink/
 └── LICENSE
 # 👥 Team
 Mahmoud Tarek Hassan — Team Leader
+
 Fares Hesham Mahmoud
+
 Shahd Hassan Ahmed
+
 Salma Mohamed Elhwary
+
 Shahd Mohamed Elnahas
  # 🎓 Instructor
 
