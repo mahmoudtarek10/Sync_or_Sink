@@ -1,74 +1,173 @@
-# 📊 Sync or Sink — Global Salary Insights — Labor Market Analysis
+ # 📊 Sync or Sink — Labor Market Analysis
+📌 Project Overview
 
-This is a data-driven project that explores how different factors determine salary levels and market value. By analyzing and visualizing datasets, the project aims to reveal hidden insights, support strategic career decisions, and help professionals stay in sync with market trends.
+Sync or Sink — Labor Market Analysis is an end-to-end data analytics project that explores the global labor market using salary and employment data. The project combines data preprocessing, cleaning, analysis, data modeling, and interactive visualization to uncover insights about salaries, education, experience, industries, and work modalities.
+Using modern data analytics tools, the project transforms raw data into meaningful business intelligence that helps individuals, recruiters, and organizations better understand labor market trends and make informed decisions.
 
-## 🗂️ Project Overview
+ # The project follows a complete analytics workflow:
+Data Collection
+Data Cleaning & Preprocessing
+Data Modeling
+Data Analysis
+Interactive Dashboard Development
+Business Insights & Reporting
 
-Global Salary Insights is a business intelligence project built with Microsoft Power BI that dives deep into a massive dataset of 250,000 records. The project transforms raw compensation data into meaningful visualizations and KPIs, helping individuals and organizations identify trends, track pay scales, and pinpoint the impact of experience and education on income
----
+ # 🎯 Project Objectives
+Analyze salary distribution across different industries.
+Study the impact of education on compensation.
+Measure the effect of experience and seniority on salary.
+Compare Remote, Hybrid, and On-site work models.
+Discover salary gaps between different job categories.
+Build interactive dashboards that support business decision-making.
+ # 🗂️ Dataset
+The project is based on a dataset containing over 250,000 salary records from different industries and countries.
+The dataset includes information such as:
 
-## 🌟 Data Model — Star Schema
-The project is built on a well-structured Star Schema to ensure optimal performance and clean relationships between tables.         
-TableTypeDescriptionFact_SalaryPerformanceFact TableCore table containing annual salary, net compensation, tax rates, bonuses, and growth percentages.Dim_JobDimensionJob details (job_title, industry, department, work_modality, required_skills).Dim_ExperienceDimensionProfessional background (years_of_experience, seniority_level, previous_roles).Dim_EducationDimensionEducational metrics (degree_level, certifications, field_of_study).|
+Job Title
+Industry
+Department
+Years of Experience
+Education Level
+Certifications
+Salary
+Bonus
+Tax Rate
+Work Modality
+Growth Percentage
+🔄 Project Workflow
+Raw Dataset
+      │
+      ▼
+Data Cleaning (Python & Excel)
+      │
+      ▼
+Data Preprocessing
+      │
+      ▼
+Data Modeling (Star Schema)
+      │
+      ▼
+Power BI
+      │
+      ▼
+Interactive Dashboard
+      │
+      ▼
+Business Insights
+ # ⭐ Data Model — Star Schema
+The project uses a Star Schema to improve query performance and simplify data analysis.
+Fact Table
+Fact_SalaryPerformance
+Contains numerical business metrics including:
+Annual Salary
+Net Compensation
+Tax Rate
+Bonus
+Salary Growth
+Dimension Tables
+Dim_Job
+Job Title
+Industry
+Department
+Work Modality
+Required Skills
+Dim_Experience
+Years of Experience
+Seniority Level
+Previous Roles
+Dim_Education
+Degree Level
+Certifications
+Field of Study
+ 
+ # 🛠️ Tools & Technologies
+Tool	Purpose
+Python (Pandas, NumPy)	Data cleaning & preprocessing
+Microsoft Excel	Data validation, formatting & initial cleaning
+Power BI Desktop	Data visualization & dashboard development
+Power Query	Data transformation inside Power BI
+DAX	Measures, KPIs & calculated columns
+ # Star Schema	Data warehouse modeling
+📈 Dashboard Features
+📊 Salary Analysis
+Average Salary
+Median Salary
+Salary Distribution
+Salary Growth
+ # 💼 Job Insights
+Highest Paying Jobs
+Salary by Industry
+Salary by Department
+Top Skills
+# 🎓 Education Analysis
+Salary by Degree
+Salary by Certification
+Field of Study Comparison
+# 👨‍💼 Experience Analysis
+Salary by Experience
+Seniority Analysis
+Career Growth
+# 🌍 Work Analysis
+Remote vs Hybrid vs On-site
+Work Modality Distribution
+# 📌 Interactive Features
+Dynamic Filters
+Drill-through Pages
+Cross-filtering
+KPI Cards
+Trend Analysis
+# 📊 Key Insights
+The dashboard helps answer questions such as:
 
----
+Which industries pay the highest salaries?
+Does education significantly affect income?
+How much does experience increase salary?
+Which work modality offers the best compensation?
+What skills are most associated with high-paying jobs?
+ # 🚀 Getting Started
+Prerequisites
+Microsoft Power BI Desktop
+Python 3.x (optional, for preprocessing)
+Installation
+git clone https://github.com/mahmoudtarek10/Sync_or_Sink.git
 
-## 🛠️ Tools & Technologies
+Open:
 
-| Tool | Purpose |
-|------|---------|
-| **Power BI Desktop** | Data modeling, DAX measures & visualizations |
-| **Star Schema** | Data warehouse design pattern |
-| **DAX** | Custom measures and calculated columns |
+Sync_or_Sink.pbix
 
----
+Explore:
 
-## 📈 Key Features
-
-✅ Clean Star Schema data model with proper relationships
-
-✅ Interactive dashboards for salary tracking and benchmarking
-
-✅ KPIs for average income, pay gaps, and industry performance
-
-✅ Work Modality analysis (Remote vs. Hybrid vs. On-site)
-
-✅ Drill-through capabilities for detailed job role insights
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Microsoft Power BI Desktop (latest version)
-
-### Steps
-1. Clone this repository
-   ```bash
-   git clone https://github.com/mahmoudtarek10/Sync_or_Sink.git
-   ```
-2. Open the `.pbix` file in **Power BI Desktop**
-3. Explore the data model under the **Model View**
-4. Interact with the dashboards in **Report View**
-
----
-
-## 👥 Team
-Mahmoud Tarek Hassan (Leader)
-
+Model View
+Report View
+Dashboard Pages
+📂 Repository Structure
+Sync_or_Sink/
+│
+├── Dashboard/
+│   └── Sync_or_Sink.pbix
+│
+├── Dataset/
+│   ├── Raw Data
+│   └── Clean Data
+│
+├── Python/
+│   └── Data_Preprocessing.ipynb
+│
+├── Images/
+│
+├── README.md
+│
+└── LICENSE
+# 👥 Team
+Mahmoud Tarek Hassan — Team Leader
 Fares Hesham Mahmoud
+Shahd Hassan Ahmed
+Salma Mohamed Elhwary
+Shahd Mohamed Elnahas
+ # 🎓 Instructor
 
-Shahd Hassan Ahmed  
+Eng. Kareem Bakly
 
-Salma Mohamed Elhwary  
+📄 License
 
-shahd Mohamed Elnahas 
-
----
-
-## 📄 License
-
-This project is for educational purposes only.
-
-# INSTRUCTOR:
-Eng: Kareem Bakly
+This project is developed for educational purposes.
